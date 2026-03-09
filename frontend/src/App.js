@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // ── Change this to your actual Render backend URL after deploying ──
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://myapp-backend-tmya.onrender.com';
 
 function App() {
   const [message, setMessage] = useState('Loading...');

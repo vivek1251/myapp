@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://myapp-backend-tmya.onrender.com';
 
-// ── Save/load token from localStorage ────────────────────────────────────────
+// ── Save/load token from localStorage ───────────────────────────── ───────────
 const getToken  = () => localStorage.getItem('token');
 const saveToken = (t) => localStorage.setItem('token', t);
 const clearToken = () => localStorage.removeItem('token');
@@ -122,7 +122,7 @@ function HomePage({ user, onLogout }) {
     <div style={styles.page}>
       <div style={styles.card}>
         <div style={styles.avatar}>{user.name.charAt(0).toUpperCase()}</div>
-        <h1 style={styles.title}>Hello, {user.name}! 👋</h1>
+        <h1 style={styles.title}>Hello from my auto-deploy! 🚀</h1>
         <p style={styles.sub}>You are logged in successfully</p>
         <div style={styles.infoBox}>
           <div style={styles.infoRow}><span style={styles.infoLabel}>Name</span><span>{user.name}</span></div>
